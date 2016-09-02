@@ -20,7 +20,7 @@ var map;
 function showMap(coords){
 	var googleLatLon = new google.maps.LatLng(coords.latitude, coords.longitude);
 	var mapOptions={
-		zoom=10,
+		zoom: 10,
 		center: googleLatLon,
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	};
