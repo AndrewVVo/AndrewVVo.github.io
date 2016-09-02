@@ -13,6 +13,8 @@ function displayLocation(position){
 	var longitude = position.coords.longitude;
 	var div = document.getElementById("location");
 	div.innerHTML = "You are at Lat: " + latitude + ", Long: " + longitude;
+	
+	showMap(position.coords);
 }
 
 var map;
