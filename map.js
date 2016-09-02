@@ -8,7 +8,7 @@ function getMyLocation(){
 	}
 }
 
-function displayLocation(){
+function displayLocation(position){
 	var latitude = position.coords.latitude;
 	var longitude = position.coords.longitude;
 	alert("h" + longitude);
