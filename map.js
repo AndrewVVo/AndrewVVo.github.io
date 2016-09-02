@@ -11,7 +11,6 @@ function getMyLocation(){
 function displayLocation(position){
 	var latitude = position.coords.latitude;
 	var longitude = position.coords.longitude;
-	alert("h" + longitude);
 	var div = document.getElementById("location");
-	div.innerHTML = "You are at Lat " + latitude + ", Long " + longitude;
+	div.innerHTML = "You are at Lat: " + latitude + ", Long: " + longitude;
 }
