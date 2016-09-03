@@ -14,12 +14,12 @@ function displayLocation(position){
 	var div = document.getElementById("location");
 	div.innerHTML = "You are at Lat: " + latitude + ", Long: " + longitude;
 	
-	showMap(position.coords);
+	initMap(position.coords);
 }
 
 var map;
 
-function showMap(coords){
+function initMap(coords){
 	var googleLatLon = new google.maps.LatLng(coords.latitude, coords.longitude);
 	var mapOptions={
 		zoom: 10,
